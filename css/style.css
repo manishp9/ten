@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Inter", serif;
+    color: #000;
+
+}
+body{
+    text-wrap: pretty;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+input:focus,
+input:focus-visible,
+input:focus-within,
+button:focus,
+button:focus-visible,
+button:focus-within,
+textarea:focus,
+textarea:focus-visible,
+textarea:focus-within {
+    outline: unset;
+    box-shadow: unset;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* .font-2 {
+    font-family: "Inter", sans-serif;
+} */
+
+.container {
+    margin: auto;
+    padding: 0 20px;
+}
+.dropdown-box.active .dropdown-toggle{
+    background: #C3ECBC;
+    color: #1D281A;
+}
+.dropdown-box.active .dropdown-toggle svg{
+    stroke: #1D281A;
+}
+.banner-section:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/svg/banner-layer.svg) no-repeat right top;
+    z-index: -1;
+}
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+/*  STYLING START */
+/*  STYLING FINISHED */

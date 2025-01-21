@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Ten" />
+    <meta property="og:description" content="Your funds can go further" />
+    <meta property="og:image" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Ten</title>
+    <link rel="icon" type="image/svg" href="images/svg/fav.svg">
+</head>
+
+<body class="mt-[74px] lg:mt-[95px]">
+    <!-- HEADER START -->
+    <header class="bg-[#1D281A] py-5 lg:py-[30px] fixed top-0 left-0 w-full z-50">
+        <div class="container">
+            <nav class="flex justify-between items-center flex-wrap lg:flex-nowrap">
+                <div class="nav-logo-box max-w-[87px] w-full">
+                    <a href="index.html">
+                        <img src="images/svg/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="toggle-btn lg:hidden w-8 flex flex-col gap-[5px]">
+                    <span class="bg-[#C3ECBC] h-[3px] rounded-md w-full"></span>
+                    <span class="bg-[#C3ECBC] h-[3px] rounded-md w-full"></span>
+                    <span class="bg-[#C3ECBC] h-[3px] rounded-md w-1/2 ml-auto"></span>
+                </div>
+                <div class="navbar-list-main-box w-full hidden lg:!block">
+                    <div class="navbar-list-box">
+                        <ul
+                            class="flex gap-3 lg:gap-[65px] flex-col lg:flex-row items-start lg:items-center justify-end pt-5 lg:pt-0">
+                            <li>
+                                <a href="#"
+                                    class="font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all">Who
+                                    We Are</a>
+                            </li>
+                            <li
+                                class="dropdown-box relative flex flex-col w-full lg:w-auto  items-start lg:items-end 2xl:items-center gap-3 lg:gap-0 ">
+                                <a href="#"
+                                    class="dropdown-toggle font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all flex items-center gap-2 group">
+                                    What we offer
+                                    <!-- <span>
+                                        <svg class="stroke-[#ffffff] group-hover:stroke-[#C3ECBC] dropdown-arrow transition-all"
+                                            width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="5.42477" y1="6.42477" x2="11.2029" y2="0.646587" />
+                                            <line x1="0.353553" y1="0.646447" x2="6.13173" y2="6.42463" />
+                                        </svg>
+                                    </span> -->
+                                </a>
+                                <div class="dropdown-menu lg:absolute top-[82px] lg:w-[600px] hidden w-full ">
+                                    <div
+                                        class="dropdown-inner-box bg-white shadow-[10px_13px_62px_3px_#1D281A1A] rounded-[10px] p-5 md:p-10 flex justify-between flex-col sm:flex-row gap-2">
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Donation
+                                                Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        ten platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Card</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Checkbooks</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="donation-line w-full h-[0.25px] sm:h-[unset] sm:w-[0.25px] bg-[#BCBEC0]">
+                                        </div>
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Investment Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        tenefactor platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Investment
+                                                        Guides</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li
+                                class="dropdown-box relative flex flex-col items-start lg:items-end 2xl:items-center gap-3 lg:gap-0 w-full lg:w-auto">
+                                <a href="#"
+                                    class="dropdown-toggle font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all flex items-center gap-2 group">
+                                    How it works
+                                    <!-- <span>
+                                        <svg class="stroke-[#ffffff] group-hover:stroke-[#C3ECBC] dropdown-arrow transition-all"
+                                            width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="5.42477" y1="6.42477" x2="11.2029" y2="0.646587" />
+                                            <line x1="0.353553" y1="0.646447" x2="6.13173" y2="6.42463" />
+                                        </svg>
+                                    </span> -->
+                                </a>
+                                 <div class="dropdown-menu lg:absolute top-[82px] w-full lg:w-[600px] hidden">
+                                    <div
+                                        class="dropdown-inner-box bg-white shadow-[10px_13px_62px_3px_#1D281A1A] rounded-[10px] p-5 md:p-10 flex justify-between flex-col sm:flex-row gap-2">
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Donation
+                                                Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        ten platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Card</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Checkbooks</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="donation-line w-full h-[0.25px] sm:h-[unset] sm:w-[0.25px] bg-[#BCBEC0]">
+                                        </div>
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Investment Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        tenefactor platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Investment
+                                                        Guides</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all">Get
+                                    Giving</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- BANNER SECTION START -->
+    <section class="banner-section pt-[25px] md:pt-[60px] lg:pt-[120px] relative z-0">
+        <div class="container">
+            <div class="banner-inner">
+                <h1 class="text-4xl md:text-[70px] md:leading-[77.63px] text-black font-normal wow fadeInUp"
+                    data-wow-delay="0.3s">Your funds can go
+                    further</h1>
+                <p class="max-w-[503px] w-full font-normal text-base text-[#525151] py-5 md:py-9 wow fadeInUp"
+                    data-wow-delay="0.4s">Ten is a
+                    donor-advisory fund and investment platform that makes your giving safer, easier, and above all —
+                    more impactful.</p>
+                <!-- opn-acc-btn <div class="banner-btn-box flex items-center gap-[18px] wow fadeInUp mb-[40px] md:mb-0"
+                    data-wow-delay="0.5s">
+                    <a href="#"
+                        class="font-normal text-sm sm:text-base text-white hover:text-[#1D281A] group py-2 px-[25px] bg-[#1D281A] hover:bg-[#C3ECBC] rounded-full flex items-center gap-3 transition-all">Open
+                        an Account <svg class="stroke-white transition-all group-hover:stroke-[#1D281A]" width="7"
+                            height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="6.42477" y1="6.13175" x2="0.646587" y2="0.353571" />
+                            <line x1="0.646447" y1="11.203" x2="6.42463" y2="5.42478" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="font-normal text-sm sm:text-base text-black hover:text-[#43CF48] group py-2 px-[15px] flex items-center gap-3 transition-all group">Explore
+                        <svg class="stroke-black transition-all group-hover:stroke-[#43CF48]" width="7" height="12"
+                            viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="6.42477" y1="6.13175" x2="0.646587" y2="0.353571" />
+                            <line x1="0.646447" y1="11.203" x2="6.42463" y2="5.42478" />
+                        </svg>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <div class="banner-img-box pt-5 sm:pt-0 wow fadeInUp" data-wow-delay="0.6s">
+            <img class="2xl:w-[90%]" src="images/banner-img.png" alt="banner-img">
+        </div>
+    </section>
+    <!-- BANNER SECTION END -->
+    <!-- WE OFFER SECTION START -->
+    <section class="we-offer-section py-[60px] lg:py-[120px]">
+        <div class="container stacking_card_section">
+            <div class="we-offer-heading flex flex-col md:items-center gap-3 sm:gap-8 pb-[30px] md:pb-12 lg:pb-[97px]">
+                <h4 class="text-base leading-[25px] font-normal tracking-wider text-[#43CF48] wow fadeInUp"
+                    data-wow-delay="0.3s">WHAT WE OFFER</h4>
+                <h2 class="text-[36px] md:text-5xl leading-[46px] md:leading-[53.23px] text-black md:text-center wow fadeInUp"
+                    data-wow-delay="0.4s">
+                    Seamless, secure, and scalable giving</h2>
+                <p class="text-base leading-[25px] font-normal text-[#525151] md:text-center max-w-[543px] w-full wow fadeInUp"
+                    data-wow-delay="0.5s">The
+                    world turns on givers
+                    like you. We’re here to help you give more and get more — so you can open
+                    your hand as wide as your heart.</p>
+            </div>
+
+
+
+
+
+
+
+
+            <div id="box-cont" class="we-offer-info-main flex flex-col gap-5 stacking_cards">
+                <div  class="we-offer-info bg-[#F4F6EE] rounded-[10px] md:p-5 flex justify-between flex-col-reverse md:flex-row  sticky top-[100px] md:top-[150px]  stacking_card_item"
+                   >
+                    <div class="we-offer-text-box flex flex-col justify-between gap-5 p-5 md:p-10">
+                        <div class="we-offer-text-inner-box flex flex-col gap-5 sm:gap-[30px]">
+                            <div class="we-offer-text-heading flex items-center gap-[27px]">
+                                <div
+                                    class="we-offer-icon-box w-[55px] aspect-square rounded-[10px] bg-[#1D281A] flex justify-center items-center">
+                                    <img src="images/svg/we-offer-icon1.svg" alt="we-offer-icon">
+                                </div>
+                                <h6 class="text-xl md:text-[32px] text-black font-normal md:leading-[35.49px]">Donate
+                                    with a swipe</h6>
+                            </div>
+                            <p class="text-[#525151] font-normal text-base leading-[25px]">Give effortlessly and
+                                instantly<br class="hidden lg:block"> anytime, from anywhere with your<br
+                                    class="hidden lg:block"> secure, all-in-one charity card</p>
+                        </div>
+                        <!-- <div class="we-offer-btn flex">
+                            <a href="#"
+                                class="text-[#43CF48] text-base leading-[19.36px] font-normal pb-1 flex gap-[10px] items-center transition-all border border-transparent hover:text-[#1D281A] group">Get
+                                giving <span><svg class="stroke-[#43CF48] group-hover:stroke-[#1D281A] group-hover:text-[#1D281A] transition-all " width="7" height="12" viewBox="0 0 7 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="-0.5" x2="8.24332" y2="-0.5"
+                                            transform="matrix(-0.713207 -0.700953 0.713207 -0.700953 6.87939 5.77832)" />
+                                        <line y1="-0.5" x2="8.24332" y2="-0.5"
+                                            transform="matrix(0.713207 -0.700953 0.713207 0.700953 1 11.5566)" />
+                                    </svg>
+                                </span></a>
+                        </div> -->
+                    </div>
+                    <div class="we-offer-img-box md:max-w-[485px] w-full self-center">
+                        <img class="rounded-t-[10px] md:rounded-[10px]" src="images/we-offer-img1.jpg"
+                            alt="we-offer-img">
+                    </div>
+                </div>
+                <div class="we-offer-info bg-[#F4F6EE] rounded-[10px] md:p-5 flex justify-between flex-col-reverse md:flex-row  sticky top-[150px] md:top-[200px] stacking_card_item"
+                    >
+                    <div class="we-offer-text-box flex flex-col justify-between gap-5 p-5 md:p-10">
+                        <div class="we-offer-text-inner-box flex flex-col gap-5 sm:gap-[30px]">
+                            <div class="we-offer-text-heading flex items-center gap-[27px]">
+                                <div
+                                    class="we-offer-icon-box w-[55px] aspect-square rounded-[10px] bg-[#1D281A] flex justify-center items-center">
+                                    <img src="images/svg/we-offer-icon2.svg" alt="we-offer-icon">
+                                </div>
+                                <h6 class="text-xl md:text-[32px] text-black font-normal md:leading-[35.49px]">Fund with
+                                    a flip</h6>
+                            </div>
+                            <p class="text-[#525151] font-normal text-base leading-[25px]">Hand out in-person or mail
+                                anonymously<br class="hidden lg:block"> with your safe, trackable, and<br
+                                    class="hidden lg:block"> controllable certificate book</p>
+                        </div>
+                        <!-- <div class="we-offer-btn flex">
+                            <a href="#"
+                                class="text-[#43CF48] text-base leading-[19.36px] font-normal pb-1 flex gap-[10px] items-center transition-all border border-transparent hover:text-[#1D281A] group">Get
+                                giving <span><svg class="stroke-[#43CF48] group-hover:text-[#1D281A] group-hover:stroke-[#1D281A] transition-all " width="7" height="12" viewBox="0 0 7 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="-0.5" x2="8.24332" y2="-0.5"
+                                            transform="matrix(-0.713207 -0.700953 0.713207 -0.700953 6.87939 5.77832)" />
+                                        <line y1="-0.5" x2="8.24332" y2="-0.5"
+                                            transform="matrix(0.713207 -0.700953 0.713207 0.700953 1 11.5566)" />
+                                    </svg>
+                                </span></a>
+                        </div> -->
+                    </div>
+                    <div class="we-offer-img-box md:max-w-[485px] w-full self-center">
+                        <img class="rounded-t-[10px] md:rounded-[10px]" src="images/we-offer-img2.jpg"
+                            alt="we-offer-img">
+                    </div>
+                </div>
+                <div  class="we-offer-info bg-[#F4F6EE] rounded-[10px] md:p-5 flex justify-between flex-col-reverse md:flex-row  sticky top-[200px] md:top-[250px] stacking_card_item"
+                    >
+                    <div class="we-offer-text-box flex flex-col justify-between gap-5 p-5 md:p-10">
+                        <div class="we-offer-text-inner-box flex flex-col gap-5 sm:gap-[30px]">
+                            <div class="we-offer-text-heading flex items-center gap-[27px]">
+                                <div
+                                    class="we-offer-icon-box w-[55px] aspect-square rounded-[10px] bg-[#1D281A] flex justify-center items-center">
+                                    <img src="images/svg/we-offer-icon3.svg" alt="we-offer-icon">
+                                </div>
+                                <h6 class="text-xl md:text-[32px] text-black font-normal md:leading-[35.49px]">
+                                    Contribute with control</h6>
+                            </div>
+                            <p class="text-[#525151] font-normal text-base leading-[25px]">Make donations, track and
+                                manage activity,<br class="hidden lg:block"> view statements, order cards and books —
+                                all<br class="hidden lg:block"> in real time — with our streamlined, simplified,<br
+                                    class="hidden lg:block"> and protected website and app</p>
+                        </div>
+                        <!-- <div class="we-offer-btn flex">
+                            <a href="#"
+                                class="text-[#43CF48] text-base leading-[19.36px] font-normal pb-1 flex gap-[10px] items-center transition-all border border-transparent hover:text-[#1D281A] group">Get
+                                giving <span><svg class="stroke-[#43CF48] group-hover:text-[#1D281A] group-hover:stroke-[#1D281A] transition-all " width="7" height="12" viewBox="0 0 7 12"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="-0.5" x2="8.24332" y2="-0.5"
+                                            transform="matrix(-0.713207 -0.700953 0.713207 -0.700953 6.87939 5.77832)" />
+                                        <line y1="-0.5" x2="8.24332" y2="-0.5"
+                                            transform="matrix(0.713207 -0.700953 0.713207 0.700953 1 11.5566)" />
+                                    </svg>
+                                </span></a>
+                        </div> -->
+                    </div>
+                    <div class="we-offer-img-box md:max-w-[485px] w-full self-center">
+                        <img class="rounded-t-[10px] md:rounded-[10px]" src="images/we-offer-img3.jpg"
+                            alt="we-offer-img">
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- WE OFFER SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="footer lg:100px 2xl:px-[194px]">
+        <div class="footer-outer bg-[#1D281A] pt-[40px] lg:pt-[70px] pb-3 lg:pb-[25px]">
+            <div class="container">
+                <div class="footer-inner flex justify-between gap-10 flex-col md:flex-row">
+                    <div class="footer-logo-box max-w-[87px] min-w-[87px] sm:mx-[unset] wow fadeInDown"
+                        data-wow-delay="0.3s">
+                        <a href="index.html">
+                            <img src="images/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-list-box flex flex-col sm:flex-row justify-between gap-5 md:gap-[100px] lg:gap-[200px] wow fadeInDown"
+                        data-wow-delay="0.3s">
+                        <div class="footer-list-inner-box flex flex-col gap-4">
+    
+                            <div class="footer-inner-sub-list-box flex flex-col gap-2">
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Who
+                                    We
+                                    Are</a>
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Get
+                                    Giving</a>
+    
+                            </div>
+                        </div>
+                        <div class="footer-list-inner-box flex flex-col gap-4">
+                            <div class="footer-inner-sub-list-box flex flex-col gap-2">
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">The
+                                    Ten
+                                    Platform</a>
+                                <a href="#"
+                                    class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Card</a>
+                                <a href="#"
+                                    class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Checkbooks</a>
+    
+                            </div>
+                        </div>
+                        <div class="footer-list-inner-box flex flex-col gap-4">
+                            <div class="footer-inner-sub-list-box flex flex-col gap-2">
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">The
+                                    Tenefactor Platform</a>
+                                <a href="#"
+                                    class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Investment
+                                    Guides</a>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="footer-bottom-div pt-[50px] lg:pt-[60px] justify-between sm:text-center wow fadeInDown flex flex-col-reverse sm:flex-row gap-4">
+                    <div class="copyright-div text-[#C3ECBC] text-xs md:text-sm" data-wow-delay="0.3s">
+                        Copyright &copy; <span id="currentYear" class="text-[#C3ECBC]"></span> - All rights reserved
+                    </div>
+                    <div class="flex gap-3">
+                        <a class="text-[#C3ECBC] text-xs md:text-sm hover:border-[#C3ECBC] transition-all border-b border-transparent"
+                            href="privacy-policy.html" data-wow-delay="0.3s">
+                            Privacy Policy
+                        </a>
+                        <a class=" text-[#C3ECBC] text-xs md:text-sm hover:border-[#C3ECBC] transition-all border-b border-transparent"
+                            href="term-&-conditions.html" data-wow-delay="0.3s">
+                            Terms and Conditions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="script/wow.js"></script>
+    <script type="text/javascript" src="script/stack.js"></script>
+    <script src="script/script.js"></script>
+
+
+    <script>
+
+// window.addEventListener('load', function() {
+
+
+
+
+
+    // let box = document.getElementsByClassName('we-offer-info.sticky'),
+    //     // docHeight = document.element.offsetHeight;
+    //     // docHeight = document.documentElement.offsetHeight;
+    //     docHeight =  document.getElementById('box-cont').style.offsetHeight = 0;
+
+    // window.addEventListener('scroll', function() {
+       
+    //     let scrolled = window.scrollY / (docHeight - window.innerHeight);
+        
+        
+    //     let transformValue = 'scale(' + (1 - scrolled) + ')';
+
+       
+    //     // box.style.WebkitTransform = transformValue;  
+    //     // box.style.MozTransform = transformValue;     
+    //     // box.style.OTransform = transformValue;       
+    //     box.style.transform = transformValue;        
+
+    // }, false);
+
+// }, false);
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Ten" />
+    <meta property="og:description" content="Your funds can go further" />
+    <meta property="og:image" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Ten</title>
+    <link rel="icon" type="image/svg" href="images/svg/fav.svg">
+</head>
+
+<body class="mt-[74px] lg:mt-[95px] bg-[#F4F6EE]">
+    <!-- HEADER START -->
+    <header class="bg-[#1D281A] py-5 lg:py-[30px] fixed top-0 left-0 w-full z-50">
+        <div class="container">
+            <nav class="flex justify-between items-center flex-wrap lg:flex-nowrap">
+                <div class="nav-logo-box max-w-[87px] w-full">
+                    <a href="index.html">
+                        <img src="images/svg/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="toggle-btn lg:hidden w-8 flex flex-col gap-[5px]">
+                    <span class="bg-[#C3ECBC] h-[3px] rounded-md w-full"></span>
+                    <span class="bg-[#C3ECBC] h-[3px] rounded-md w-full"></span>
+                    <span class="bg-[#C3ECBC] h-[3px] rounded-md w-1/2 ml-auto"></span>
+                </div>
+                <div class="navbar-list-main-box w-full hidden lg:!block">
+                    <div class="navbar-list-box">
+                        <ul
+                            class="flex gap-3 lg:gap-[65px] flex-col lg:flex-row items-start lg:items-center justify-end pt-5 lg:pt-0">
+                            <li>
+                                <a href="#"
+                                    class="font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all">Who
+                                    We Are</a>
+                            </li>
+                            <li
+                                class="dropdown-box relative flex flex-col w-full lg:w-auto  items-start lg:items-end 2xl:items-center gap-3 lg:gap-0 ">
+                                <a href="#"
+                                    class="dropdown-toggle font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all flex items-center gap-2 group">
+                                    What we offer
+                                    <!-- <span>
+                                        <svg class="stroke-[#ffffff] group-hover:stroke-[#C3ECBC] dropdown-arrow transition-all"
+                                            width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="5.42477" y1="6.42477" x2="11.2029" y2="0.646587" />
+                                            <line x1="0.353553" y1="0.646447" x2="6.13173" y2="6.42463" />
+                                        </svg>
+                                    </span> -->
+                                </a>
+                                <div class="dropdown-menu lg:absolute top-[82px] lg:w-[600px] hidden w-full ">
+                                    <div
+                                        class="dropdown-inner-box bg-white shadow-[10px_13px_62px_3px_#1D281A1A] rounded-[10px] p-5 md:p-10 flex justify-between flex-col sm:flex-row gap-2">
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Donation
+                                                Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        ten platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Card</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Checkbooks</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="donation-line w-full h-[0.25px] sm:h-[unset] sm:w-[0.25px] bg-[#BCBEC0]">
+                                        </div>
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Investment Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        tenefactor platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Investment
+                                                        Guides</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li
+                                class="dropdown-box relative flex flex-col items-start lg:items-end 2xl:items-center gap-3 lg:gap-0 w-full lg:w-auto">
+                                <a href="#"
+                                    class="dropdown-toggle font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all flex items-center gap-2 group">
+                                    How it works
+                                    <!-- <span>
+                                        <svg class="stroke-[#ffffff] group-hover:stroke-[#C3ECBC] dropdown-arrow transition-all"
+                                            width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="5.42477" y1="6.42477" x2="11.2029" y2="0.646587" />
+                                            <line x1="0.353553" y1="0.646447" x2="6.13173" y2="6.42463" />
+                                        </svg>
+                                    </span> -->
+                                </a>
+                                 <div class="dropdown-menu lg:absolute top-[82px] w-full lg:w-[600px] hidden">
+                                    <div
+                                        class="dropdown-inner-box bg-white shadow-[10px_13px_62px_3px_#1D281A1A] rounded-[10px] p-5 md:p-10 flex justify-between flex-col sm:flex-row gap-2">
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Donation
+                                                Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        ten platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Card</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Checkbooks</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="donation-line w-full h-[0.25px] sm:h-[unset] sm:w-[0.25px] bg-[#BCBEC0]">
+                                        </div>
+                                        <div class="donation-box flex flex-col gap-1 sm:gap-[23px]">
+                                            <p
+                                                class="font-medium text-base sm:text-lg sm:leading-[21.78px] text-[#1D281A]">
+                                                Investment Management</p>
+                                            <ul>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">The
+                                                        tenefactor platform</a></li>
+                                                <li><a href="#"
+                                                        class="text-sm sm:leading-[40px] text-[#738974] font-normal transition-all hover:text-[#1D281A]">Investment
+                                                        Guides</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="font-normal px-[14px] py-2 rounded-[5px] text-base leading-[19.36px] text-white hover:text-[#C3ECBC] transition-all">Get
+                                    Giving</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- PRIVACY BANNER SECTION START -->
+    <section class="privacy-banner-section bg-[#1D281A] border-t border-[#ffffff1f]">
+        <div class="container">
+            <div class="privacy-banner-inner md:h-[200px] lg:h-[300px] flex items-center py-10 sm:py-16">
+                    <h1 class="text-2xl sm:text-5xl md:text-[50px] lg:text-[60px] lg:leading-[67.63px] text-[#C3ECBC] font-normal wow fadeInUp" data-wow-delay="0.3s">TERMS AND CONDITIONS</h1>
+            </div>
+        </div>
+    </section>
+    <!-- PRIVACY BANNER SECTION END -->
+    <!-- PRIVACY DATA SECTION START -->
+    <section class="privacy-data-section py-[50px] md:py-[80px] xl:py-[100px]">
+        <div class="container">
+            <div class="privacy-data-inner">
+                <div class="privacy-info-main-box gap-10 flex flex-col">
+                    <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                        <div class="privacy-info-heading md:w-1/4 relative">
+                            <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Introduction</h3>
+                        </div>
+                        <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                            <p class="text-[#525151] font-normal text-sm sm:text-base leading-[25px]">Welcome to our website. By using or accessing this site, you agree to comply with and be bound by the following terms
+                            and conditions of use, which, together with our Privacy Policy, govern TEN’s relationship with you
+                            regarding this website. If you do not agree to these terms, please do not use our website.</p>
+                        </div>
+                    </div>
+                    <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                        <div class="privacy-info-heading md:w-1/4 relative">
+                            <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Who We Are</h3>
+                        </div>
+                        <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                        <div class="privacy-list-box">
+                            <p class="text-[#525151] font-normal text-sm sm:text-base leading-[25px]">The terms ‘TEN,’ ‘us,’ or ‘we’ refer to the owner of the website. The term ‘you’ refers to the user or
+                            viewer of the website.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                        <div class="privacy-info-heading md:w-1/4 relative">
+                            <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Use of This Website</h3>
+                        </div>
+                        <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                        <div class="privacy-list-box">
+                            <ul class="pl-5 flex flex-col gap-2 py-3">
+                                <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]">The content on this website is for general information purposes only and is subject to change without notice.</li>
+                                <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]">We do not provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness, or suitability of
+                                the information and materials found or offered on this website. You acknowledge that such information may contain
+                                inaccuracies or errors, and we expressly exclude liability for such inaccuracies to the fullest extent permitted by law.</li>
+                                <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]">Your use of any information or materials on this website is entirely at your own risk. It is your responsibility to
+                                ensure that any services or information available through this website meet your specific requirements.</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                        <div class="privacy-info-heading md:w-1/4 relative">
+                            <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Intellectual Property</h3>
+                        </div>
+                        <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                            <div class="privacy-list-box">
+                                <ul class="pl-5 flex flex-col gap-2 py-3">
+                                    <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]">This website contains material owned by or licensed to us. This includes, but is not limited to, the design, layout,
+                                    look, appearance, graphics, and copy. Reproduction is prohibited unless explicitly permitted in writing.</li>
+                                    <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]">All trademarks reproduced on this website, which are not the property of or licensed to the operator, are acknowledged
+                                    on the website.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                        <div class="privacy-info-heading md:w-1/4 relative">
+                            <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Unauthorized Use</h3>
+                        </div>
+                        <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                            <p class="text-[#525151] font-normal text-sm sm:text-base leading-[25px]">Unauthorized use of this website may result in a claim for damages and/or constitute a criminal offense.</p>
+                        </div>
+                    </div>
+                    <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                        <div class="privacy-info-heading md:w-1/4 relative">
+                            <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Third-Party Links</h3>
+                        </div>
+                        <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                            <p class="text-[#525151] font-normal text-sm sm:text-base leading-[25px]">From time to time, this website may include links to external websites. These links are provided for your convenience
+                            and do not signify our endorsement of those websites. We are not responsible for the content, policies, or practices of
+                            any linked websites.</p>
+                        </div>
+                    </div>
+                        <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                            <div class="privacy-info-heading md:w-1/4 relative">
+                                <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Disclaimer of Liability</h3>
+                            </div>
+                            <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                                <div class="privacy-list-box">
+                                    <ul class="pl-5 flex flex-col gap-2 py-3">
+                                        <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]">Neither we nor any third parties guarantee the accuracy, timeliness, performance, or completeness of the information and
+                                        materials provided on this website.</li>
+                                        <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]">We are not liable for any loss or damage, including indirect or consequential loss or damage, arising from your use of
+                                        this website.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                                                <div class="privacy-info-heading md:w-1/4 relative">
+                                                    <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Governing Law</h3>
+                                                </div>
+                                                <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                                                    <p class="text-[#525151] font-normal text-sm sm:text-base leading-[25px]">Your use of this website and any disputes arising from such use are governed by the laws of the United States.</p>
+                                                </div>
+                                            </div>
+                                            <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                                                <div class="privacy-info-heading md:w-1/4 relative">
+                                                    <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Changes to Terms of Use</h3>
+                                                </div>
+                                                <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                                                    <p class="text-[#525151] font-normal text-sm sm:text-base leading-[25px]">We reserve the right to update these terms at any time. Any changes will be posted on this page, and your continued use
+                                                    of the website indicates your acceptance of those changes.</p>
+                                                </div>
+                                            </div>
+                    <div class="privacy-info-box flex flex-col md:flex-row gap-3 sm:gap-5 md:gap-10">
+                                            <div class="privacy-info-heading md:w-1/4 relative">
+                                                <h3 class="text-xl md:text-2xl text-[#1D281A] font-normal md:sticky top-[85px] lg:top-[110px]">Contact Us</h3>
+                                            </div>
+                                            <div class="privacy-info-data flex flex-col gap-4 md:w-3/4">
+                                                <div class="privacy-list-box">
+                                                    <p class="text-[#525151] font-normal text-sm sm:text-base leading-[25px]">If you have any questions or concerns about this Privacy Policy, please reach out to us:</p>
+                                                    <ul class="pl-5 flex flex-col gap-2 pt-3">
+                                                        <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]"><span class="font-medium">By email: </span><a class="border-b border-transparent transition-all hover:border-black text-[#1d281a]" href="mailto:abc@gmail.com"> abc@gmail.com</a>
+                                                        </li>
+                                                        <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]"><span class="font-medium">By visiting our website: </span><a class="border-b border-transparent transition-all hover:border-black text-[#1d281a]" target="_blank" href="abc.com">abc.com</a></li>
+                                                        <li class="list-disc text-[#525151] font-normal text-sm sm:text-base leading-[25px]"><span class="font-medium">By phone:</span> <a class="border-b border-transparent transition-all hover:border-black text-[#1d281a]" href="tel:987654321">987654321</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRIVACY DATA SECTION END -->
+    <!-- FOOTER START -->
+    <footer class="footer lg:100px 2xl:px-[194px]">
+        <div class="footer-outer bg-[#1D281A] pt-[40px] lg:pt-[70px] pb-3 lg:pb-[25px]">
+            <div class="container">
+                <div class="footer-inner flex justify-between gap-10 flex-col md:flex-row">
+                    <div class="footer-logo-box max-w-[87px] min-w-[87px] sm:mx-[unset] wow fadeInDown"
+                        data-wow-delay="0.3s">
+                        <a href="index.html">
+                            <img src="images/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer-list-box flex flex-col sm:flex-row justify-between gap-5 md:gap-[100px] lg:gap-[200px] wow fadeInDown"
+                        data-wow-delay="0.3s">
+                        <div class="footer-list-inner-box flex flex-col gap-4">
+    
+                            <div class="footer-inner-sub-list-box flex flex-col gap-2">
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Who
+                                    We
+                                    Are</a>
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Get
+                                    Giving</a>
+    
+                            </div>
+                        </div>
+                        <div class="footer-list-inner-box flex flex-col gap-4">
+                            <div class="footer-inner-sub-list-box flex flex-col gap-2">
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">The
+                                    Ten
+                                    Platform</a>
+                                <a href="#"
+                                    class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Card</a>
+                                <a href="#"
+                                    class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Checkbooks</a>
+    
+                            </div>
+                        </div>
+                        <div class="footer-list-inner-box flex flex-col gap-4">
+                            <div class="footer-inner-sub-list-box flex flex-col gap-2">
+                                <a href="#" class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">The
+                                    Tenefactor Platform</a>
+                                <a href="#"
+                                    class="font-normal text-sm text-white hover:text-[#C3ECBC] transition-all">Investment
+                                    Guides</a>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="footer-bottom-div pt-[50px] lg:pt-[60px] justify-between sm:text-center wow fadeInDown flex flex-col-reverse sm:flex-row gap-4">
+                    <div class="copyright-div text-[#C3ECBC] text-xs md:text-sm" data-wow-delay="0.3s">
+                        Copyright &copy; <span id="currentYear" class="text-[#C3ECBC]"></span> - All rights reserved
+                    </div>
+                    <div class="flex gap-3">
+                        <a class="text-[#C3ECBC] text-xs md:text-sm hover:border-[#C3ECBC] transition-all border-b border-transparent"
+                            href="privacy-policy.html" data-wow-delay="0.3s">
+                            Privacy Policy
+                        </a>
+                        <a class=" text-[#C3ECBC] text-xs md:text-sm hover:border-[#C3ECBC] transition-all border-b border-transparent"
+                            href="term-&-conditions.html" data-wow-delay="0.3s">
+                            Terms and Conditions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="script/wow.js"></script>
+    <script type="text/javascript" src="script/stack.js"></script>
+    <script src="script/script.js"></script>
+
+
+    <script>
+
+// window.addEventListener('load', function() {
+
+
+
+
+
+    // let box = document.getElementsByClassName('we-offer-info.sticky'),
+    //     // docHeight = document.element.offsetHeight;
+    //     // docHeight = document.documentElement.offsetHeight;
+    //     docHeight =  document.getElementById('box-cont').style.offsetHeight = 0;
+
+    // window.addEventListener('scroll', function() {
+       
+    //     let scrolled = window.scrollY / (docHeight - window.innerHeight);
+        
+        
+    //     let transformValue = 'scale(' + (1 - scrolled) + ')';
+
+       
+    //     // box.style.WebkitTransform = transformValue;  
+    //     // box.style.MozTransform = transformValue;     
+    //     // box.style.OTransform = transformValue;       
+    //     box.style.transform = transformValue;        
+
+    // }, false);
+
+// }, false);
+
+
+
+
+    </script>
+</body>
+
+</html>
